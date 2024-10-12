@@ -1,0 +1,8 @@
+# frozen_string_literal: true
+
+module <%= camelized_slice_name %>
+  module DB
+    class Repo < <%= camelized_app_name %>::DB::Repo
+    end
+  end
+end
