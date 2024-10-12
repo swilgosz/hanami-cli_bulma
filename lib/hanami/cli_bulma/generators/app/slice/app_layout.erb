@@ -10,7 +10,35 @@
     <%- end -%>
   </head>
   <body>
-    <%%= yield %>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://hanamimastery.com">
+          <img src="https://hanamimastery.com/logo-hm-letter.jpeg" height="28">
+        </a>
+      </div>
+      <div id="top-navigation" class="navbar-menu">
+        <div class="navbar-start">
+          <%%= link_to 'Home', '/', class: 'navbar-item' %>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <%%= yield %>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong><%= humanized_app_name %></strong>. The source code is licensed
+          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+      </div>
+    </footer>
+
     <%- if bundled_assets? -%>
     <%= javascript_erb_tag %>
     <%- end -%>
