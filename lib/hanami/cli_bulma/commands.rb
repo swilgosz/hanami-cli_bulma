@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'hanami/cli'
+
 module Hanami
   module CLIBulma
     # Contains the commands available for the current `hanami` CLI execution, depending on whether

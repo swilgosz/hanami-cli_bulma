@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "dry/cli"
-require "hanami/cli"
 require "zeitwerk"
 
 module Hanami
