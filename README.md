@@ -1,32 +1,38 @@
 # Hanami::CLI
 
+This gem adds support to [Bulma CSS Framework](https://bulma.io) for hanamai generators.
+
+NOTE:
 This library contains all of the CLI commands for [full-stack Hanami applications](`https://github.com/hanami/hanami`).
-
-**NOTE**: For versions 0.4 and below, there was a general purpose CLI utility library with this name.
-That library has since been renamed to [dry-rb/dry-cli](https://github.com/dry-rb/dry-cli).
-Please update your Gemfiles accordingly.
-
-## Status
-
-[![Gem Version](https://badge.fury.io/rb/hanami-cli.svg)](https://badge.fury.io/rb/hanami-cli)
-[![CI](https://github.com/hanami/cli/actions/workflows/ci.yml/badge.svg)](https://github.com/hanami/cli/actions?query=workflow%3Aci+branch%3Amain)
-[![Depfu](https://badges.depfu.com/badges/a8545fb67cf32a2c75b6227bc0821027/overview.svg)](https://depfu.com/github/hanami/cli?project=Bundler)
 
 ## Contact
 
-- Home page: http://hanamirb.org
-- Mailing List: http://hanamirb.org/mailing-list
-- Bugs/Issues: https://github.com/hanami/cli/issues
-- API Doc: http://rubydoc.info/gems/hanami-cli
-- Chat: http://chat.hanamirb.org
+- Home page: https://github.com/swilgosz/hanami-cli_bulma
+- Mailing List: [Hanami Mastery Newsletter](https://mailchi.mp/6ac8f64f3c5d/hanami-mastery-newsletter)
+- Bugs/Issues: https://github.com/swilgosz/hanami-cli_bulma/issues
+- API Doc: http://rubydoc.info/gems/hanami-cli_bulma
+- Chat: http://discourse.hanamirb.org
 
 ## Installation
 
-**Hanami::CLI** supports Ruby (MRI) 3.1+
+**Hanami::CLIBulma** supports Ruby (MRI) 3.1+
 
-This library is a dependency of the main `hanami` gem, so installing that is the best way to get and use this gem.
+Add gem to your gemfile
+
+```shell
+# Gemfile
+gem 'hanami-cli_bulma'
+```
+
+```shell
+bundle install
+```
 
 ## Usage
+
+```shell
+hanami g view users.show
+```
 
 ## Development
 
@@ -38,7 +44,7 @@ In order to run all of the tests, you should run `docker compose up` separately,
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/hanami/cli. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/hanami/cli/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/swilgosz/hanami-cli_bulma. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/swilgosz/hanami-cli_bulma/blob/main/CODE_OF_CONDUCT.md).
 
 ## License
 
@@ -46,8 +52,10 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the `Hanami::CLI` project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/hanami/cli/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the `Hanami::CLIBulma` project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/swilgosz/hanami-cli_Bulma/blob/main/CODE_OF_CONDUCT.md).
 
 ## Copyright
 
-Copyright © 2014–2024 Hanami Team – Released under MIT License
+Gem is extracted from `hanami-cli`, and managed by Sebastian Wilgosz
+
+Copyright © 2014–2024 Sebastian Wilgosz – Released under MIT License
