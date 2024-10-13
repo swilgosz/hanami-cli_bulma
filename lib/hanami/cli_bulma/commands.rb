@@ -26,6 +26,9 @@ module Hanami
         else
           require "hanami/cli/commands/gem"
           extend(Hanami::CLI::Commands::Gem)
+
+          require_relative "commands/gem"
+          extend(Hanami::CLIBulma::Commands::Gem)
         end
     end
   end
