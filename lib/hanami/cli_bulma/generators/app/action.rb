@@ -21,7 +21,7 @@ module Hanami
             view_directory = fs.join("app", "views", controller)
             if generate_view?(skip_view, action, view_directory)
               view_generator = Generators::App::View.new(fs: fs, inflector: inflector)
-              view_name = [action, controller].join(Hanami::CLI::Commands::App::Command::ACTION_SEPARATOR)
+              view_name = [controller, action].join(Hanami::CLI::Commands::App::Command::ACTION_SEPARATOR)
               view_generator.call(app, view_name, format, slice)
             end
           end

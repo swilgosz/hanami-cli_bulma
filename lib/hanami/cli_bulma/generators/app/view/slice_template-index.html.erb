@@ -1,0 +1,26 @@
+<h1 class="title is-1"><%= camelized_slice_name %>::Views::<%= camelized_namespace %>::<%= camelized_name %></h1>
+
+<div class="content">
+  <table class="table">
+    <thead>
+      <tr><td>Title</td><td>Content</td><td>Actions</td></tr>
+    </thead>
+    <tfoot>
+      <tr><td>Title</td><td>Content</td><td>Actions</td></tr>
+    </tfoot>
+    <tbody>
+      <%% items.each do |item| %>
+        <tr>
+          <td>Item title</td>
+          <td>Item Content</td>
+          <td>
+            <%%= link_to 'Edit', '#', class: 'button is-link is-small' %>
+            <%%= form_for :article, '#', method: :delete, id: 'id' do |f| %>
+              <%%= f.submit "Destroy" , class: 'button is-danger is-small' %>
+            <%% end %>
+          </td>
+        </tr>
+      <%% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,24 @@
+<h1 class="title is-1"><%= camelized_app_name %>::Views::<%= camelized_namespace %>::<%= camelized_name %></h1>
+
+<div class="content">
+  <table class="table">
+    <thead>
+      <tr><td>Title</td><td>Content</td><td>Actions</td></tr>
+    </thead>
+    <tfoot>
+      <tr><td>Title</td><td>Content</td><td>Actions</td></tr>
+    </tfoot>
+    <tbody>
+      <%% items.each do |item| %>
+        <tr>
+          <td>Item title</td>
+          <td>Item Content</td>
+          <td>
+            <%%= link_to 'Edit', '#', class: 'button is-link' %>
+            <%%= link_to 'Destroy', '#', class: 'button is-danger' %>
+          </td>
+        </tr>
+      <%% end %>
+    </tbody>
+  </table>
+</div>

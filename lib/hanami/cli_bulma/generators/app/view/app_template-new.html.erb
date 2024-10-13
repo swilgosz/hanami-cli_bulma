@@ -1,0 +1,24 @@
+<h1 class="title is-1"><%= camelized_app_name %>::Views::<%= camelized_namespace %>::<%= camelized_name %></h1>
+
+<div class="content">
+  <%%= form_for :item, '#' do |f| %>
+    <div class="field">
+      <%%= f.label(:title, class: "label") %>
+      <div class="control">
+        <%%= f.text_field(:title, class: 'input', placeholder: 'Title') %>
+        <span class="icon is-small is-left">
+          <i class="fas fa-pencil"></i>
+        </span>
+      </div>
+    </div>
+
+    <div class="field is-grouped">
+      <div class="control">
+        <%%= f.submit "Submit", class: "button is-link" %>
+      </div>
+      <div class="control">
+        <%%= link_to "Cancel", "/", class: "button is-link is-light"%>
+      </div>
+    </div>
+  <%% end %>
+</div>
