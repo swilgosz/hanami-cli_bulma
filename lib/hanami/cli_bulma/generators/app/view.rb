@@ -15,7 +15,7 @@ module Hanami
             if slice
               generate_for_slice(context, format, slice)
             else
-              generate_for_app(context, format, slice)
+              generate_for_app(context, format)
             end
           end
 
